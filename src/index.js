@@ -2,6 +2,8 @@
 const path = require('path');
 const message = require('./config.json');
 
-module.export = {
-	resolvePath: function (...args){return path.resolve(args)}
-}
+console.log(path.resolve('.'))
+
+console.log(path.resolve(`${message.age}`));
+console.log(path.resolve(__dirname,`${message.age} \n`),`Author: ${message.name}`);
+console.log(path.resolve(__dirname,`${message.age} \n`),`Author: ${message.name}`);
